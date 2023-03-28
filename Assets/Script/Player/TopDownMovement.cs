@@ -10,6 +10,11 @@ public class TopDownMovement : NetworkBehaviour
     [SerializeField] private GameObject ownPrefab;
     private Vector3 moveDirection;
 
+    private void Start()
+    {
+        GetComponent<Rigidbody>().freezeRotation = true;
+    }
+
     void Update()
     {
         if (!IsOwner || !Application.isFocused) return;

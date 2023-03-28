@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6520730165732827299}
   - component: {fileID: 6520730165732827298}
   - component: {fileID: 6520730165732827301}
+  - component: {fileID: 2095739580860991630}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Ball
@@ -94,7 +95,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6520730165732827308}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 7bc69c1d6d8b10049a144ac396ee9ef1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -158,3 +159,15 @@ MonoBehaviour:
   ScaleThreshold: 0.01
   InLocalSpace: 0
   Interpolate: 1
+--- !u!114 &2095739580860991630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6520730165732827308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6c0be61502bb534f922ebb746851216, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
