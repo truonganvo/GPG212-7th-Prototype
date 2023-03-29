@@ -5,12 +5,15 @@ using UnityEngine;
 public class NewBehaviourScript : MonoBehaviour
 {
     [SerializeField] ScoreSystem scoreSystem;
+    [SerializeField] Transform teleportPosition;
+
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Ball"))
         {
             scoreSystem.ClientScore();
+            other.transform.position = teleportPosition.position;
         }
     }
 
@@ -20,6 +23,7 @@ public class NewBehaviourScript : MonoBehaviour
             if (collision.gameObject.CompareTag("Ball"))
             {
                 scoreSystem.ClientScore();
+                collision.transform.position = teleportPosition.position;
             }
         }
     }
