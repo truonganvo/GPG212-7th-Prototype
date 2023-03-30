@@ -529,6 +529,7 @@ Transform:
   - {fileID: 575796787}
   - {fileID: 1906249835}
   - {fileID: 895726525}
+  - {fileID: 471488314}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -884,6 +885,51 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 413204498}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &471488313
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 471488314}
+  - component: {fileID: 471488315}
+  m_Layer: 0
+  m_Name: Roof
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &471488314
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471488313}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 239092630}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &471488315
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471488313}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 38.603535, y: 2.0730038, z: 20.182755}
+  m_Center: {x: -1.4501438, y: 5.570508, z: 7.8612003}
 --- !u!1 &477676887
 GameObject:
   m_ObjectHideFlags: 0
@@ -2850,6 +2896,7 @@ GameObject:
   - component: {fileID: 2034654572}
   - component: {fileID: 2034654571}
   - component: {fileID: 2034654570}
+  - component: {fileID: 2034654574}
   m_Layer: 5
   m_Name: Score Canvas
   m_TagString: Untagged
@@ -2939,6 +2986,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &2034654574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2034654569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlobalObjectIdHash: 1382727569
+  AlwaysReplicateAsRoot: 0
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
 --- !u!1 &2080319983
 GameObject:
   m_ObjectHideFlags: 0
@@ -3233,6 +3296,14 @@ PrefabInstance:
     - target: {fileID: 7722955094823369514, guid: 26ba71f06b8419f44a6e5ecd749b1250, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722955095906598840, guid: 26ba71f06b8419f44a6e5ecd749b1250, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -155
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722955095906598841, guid: 26ba71f06b8419f44a6e5ecd749b1250, type: 3}
+      propertyPath: m_text
+      value: Ping Pong Playground
       objectReference: {fileID: 0}
     - target: {fileID: 7722955096077596545, guid: 26ba71f06b8419f44a6e5ecd749b1250, type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag

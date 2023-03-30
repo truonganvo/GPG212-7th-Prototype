@@ -185,5 +185,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   teleportPosition: {fileID: 0}
-  bounceForce: 10
+  bounceForce: 20
   rb: {fileID: 6520730165732827299}
