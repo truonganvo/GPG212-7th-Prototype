@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 6585334284804414417}
   - component: {fileID: 6585334284804414416}
   - component: {fileID: 6585334284804414446}
-  - component: {fileID: 7457073046349219300}
-  - component: {fileID: -2718677090916486013}
-  - component: {fileID: 7970752515727091358}
+  - component: {fileID: -4741527346879685316}
+  - component: {fileID: 453186128842087487}
+  - component: {fileID: 168410218038823583}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -32,8 +32,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6585334284804414423}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -18.3544, y: 0.4736, z: -2.6315}
-  m_LocalScale: {x: 1.2567649, y: 1, z: 2.4803624}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.2567649, y: 1, z: 1.256765}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 741235524662355523}
@@ -117,6 +117,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   ownPrefab: {fileID: 6585334284804414423}
+  rb: {fileID: -4741527346879685316}
 --- !u!114 &6585334284804414446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,7 +134,23 @@ MonoBehaviour:
   AlwaysReplicateAsRoot: 0
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
---- !u!114 &7457073046349219300
+--- !u!54 &-4741527346879685316
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6585334284804414423}
+  serializedVersion: 2
+  m_Mass: 50
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &453186128842087487
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -142,15 +159,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 6585334284804414423}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2139a9e38b48b24087a578d1ff1b6b7, type: 3}
+  m_Script: {fileID: 11500000, guid: c4156156cd72a5a449bb3ac5e9067a6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   SyncPositionX: 1
   SyncPositionY: 1
   SyncPositionZ: 1
-  SyncRotAngleX: 1
-  SyncRotAngleY: 1
-  SyncRotAngleZ: 1
+  SyncRotAngleX: 0
+  SyncRotAngleY: 0
+  SyncRotAngleZ: 0
   SyncScaleX: 0
   SyncScaleY: 0
   SyncScaleZ: 0
@@ -159,23 +176,7 @@ MonoBehaviour:
   ScaleThreshold: 0.01
   InLocalSpace: 0
   Interpolate: 1
---- !u!54 &-2718677090916486013
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6585334284804414423}
-  serializedVersion: 2
-  m_Mass: 10
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!114 &7970752515727091358
+--- !u!114 &168410218038823583
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -196,10 +197,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 741235524662355523}
-  - component: {fileID: 6915521099950726088}
+  - component: {fileID: 6533782916276696900}
   m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
+  m_Name: Leg
+  m_TagString: Leg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -212,14 +213,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8585370422846841410}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.07, y: -0.378, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6585334284804414444}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6915521099950726088
+--- !u!114 &6533782916276696900
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -231,6 +232,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 608f64412f954614c95c27be0647d3e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 1.38
-  force: 30
+  radius: 1.56
+  force: 20
   radiusColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}

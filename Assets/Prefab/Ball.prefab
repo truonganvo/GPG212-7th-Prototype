@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 6520730165732827298}
   - component: {fileID: 6520730165732827301}
   - component: {fileID: 2095739580860991630}
+  - component: {fileID: -8912089628786380465}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Ball
@@ -158,7 +159,7 @@ MonoBehaviour:
   RotAngleThreshold: 0.01
   ScaleThreshold: 0.01
   InLocalSpace: 0
-  Interpolate: 1
+  Interpolate: 0
 --- !u!114 &2095739580860991630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,3 +172,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6c0be61502bb534f922ebb746851216, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-8912089628786380465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6520730165732827308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d331283e8a6387343810562c2bf317b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teleportPosition: {fileID: 0}
+  bounceForce: 10
+  rb: {fileID: 6520730165732827299}

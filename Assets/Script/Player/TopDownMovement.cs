@@ -9,6 +9,7 @@ public class TopDownMovement : NetworkBehaviour
     [SerializeField] private float speed = 5f;
     [SerializeField] private GameObject ownPrefab;
     private Vector3 moveDirection;
+    [SerializeField] private Rigidbody rb;
 
     private void Start()
     {
@@ -24,11 +25,12 @@ public class TopDownMovement : NetworkBehaviour
         float vertical = Input.GetAxis("Vertical");
 
         // Calculate the move direction based on input
-        moveDirection = new Vector3(horizontal, 0f, vertical).normalized;
-        moveDirection *= speed;
+        rb.velocity = new Vector3(horizontal, 0f, vertical).normalized;
+        rb.velocity *= speed;
 
         // Move the character controller
-        transform.Translate(moveDirection * Time.deltaTime);
+        //transform.Translate(moveDirection * Time.deltaTime);
+
 
         if (IsOwnedByServer)
         {
